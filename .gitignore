@@ -1,0 +1,25 @@
+# Environment & secrets
+.env
+.streamlit/secrets.toml
+
+# Python bytecode
+__pycache__/
+*.pyc
+*.pyo
+
+# Raw training data (not needed at runtime — only pkl files are)
+movies_metadata.csv
+
+# Virtual environments
+venv/
+.venv/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
