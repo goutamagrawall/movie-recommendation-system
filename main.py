@@ -9,6 +9,7 @@ import pandas as pd
 import httpx
 from fastapi import FastAPI, HTTPException, Query
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.responses import RedirectResponse
 from pydantic import BaseModel
 from dotenv import load_dotenv
 from sklearn.metrics.pairwise import cosine_similarity
@@ -354,6 +355,12 @@ def load_pickles():
 # =========================
 # ROUTES
 # =========================
+@app.get("/")
+def root_redirect():
+    """Redirect root path to interactive Swagger documentation."""
+    return RedirectResponse(url="/docs")
+
+
 @app.get("/health")
 def health():
     return {"status": "ok"}
