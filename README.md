@@ -1,3 +1,12 @@
+---
+title: Movie Recommender Api
+emoji: 🎬
+colorFrom: blue
+colorTo: red
+sdk: docker
+app_port: 7860
+---
+
 # 🎬 Movie Recommendation System
 
 A full-stack movie recommendation engine powered by **TF-IDF cosine similarity** and the **TMDB API**, built with **FastAPI** (backend) and **Streamlit** (frontend).
